@@ -1,25 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-    const heading1=React.createElement('h1',{
-        key:1,
-        className:"heading1",
+   
+const Title=(
+    <>
+   <h2>Title </h2>
+   
+   </>
+);
+const Mcontent=()=>(
+    <>
+         <h1>Hellow World!!</h1>
+       
+     </>
+ );
     
-       },'heading1');
+const Main=()=>(
+   <>
+        <h1>Heading1</h1>
+        {Title}
+        <Mcontent/>
+    </>
+);
 
-       const heading2=React.createElement('h2',{
-        key:2,
-        className:"heading2",
-        id:"add",
-     
-       },'heading2');
-
-       const container=React.createElement('div',{
-     
-        className:"container",
-     
-       },[heading1,heading2]);
-      
     
     const root=ReactDOM.createRoot(document.getElementById('root'));
   
-    root.render(container);
+    root.render(<Main/>);
