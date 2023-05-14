@@ -1,28 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-   
-const Title=(
-    <>
-   <h2>Title </h2>
-   
-   </>
-);
-const Mcontent=()=>(
-    <>
-         <h1>Hellow World!!</h1>
-       
-     </>
- );
-    
-const Main=()=>(
-   <>
-        <h1>Heading1</h1>
-        {Title}
-        <Mcontent/>
-    </>
-);
+import Header from './component/Header'
+import Body from './component/Body'
+import Footer from './component/Footer'
 
-    
+const AppLayout=()=>{
+    return(
+<>
+    <Header/>
+    <Body/>
+    <Footer/>
+</>
+    );
+};
+
+    const container =React.createElement("div",{id:"container",},  <AppLayout/>);
     const root=ReactDOM.createRoot(document.getElementById('root'));
-  
-    root.render(<Main/>);
+    root.render(container);
