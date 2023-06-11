@@ -38,7 +38,7 @@ h1{
     padding-left: 30px;
     padding-right: 30px;
 }
-form.example input[type=text] {
+form.example .form-control {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;

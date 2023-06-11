@@ -1,17 +1,14 @@
 import React from 'react';
 
-  
 const Title=(
     <>
    <p className="my-0"><i> <strong> Eat&fit </strong></i></p>
-   
-   </>
+    </>
 );
 const Mcontent=()=>(
     <>
          <h1 className="logo mb-0 my-0">LOGO</h1>
-       
-     </>
+         </>
  );
     
 const Header=()=>{
@@ -19,8 +16,7 @@ const Header=()=>{
 <>
 <header className="py-2 d-flex justify-content-between">
      <div className="px-3">
-
-        <Mcontent/>
+ <Mcontent/>
         {Title}
         </div>
 
